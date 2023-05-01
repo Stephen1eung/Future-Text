@@ -1,5 +1,9 @@
 from datetime import datetime
 
+#Retrieve user inputs:
+#   recieve date
+#   message input
+
 date_format = "%Y %m %d"
 
 #input from user for date to recieve
@@ -24,3 +28,9 @@ def messageInput():
     text = input("Message: ")
     return text
 
+def yesNo():
+    ans = input("Yes or no? (y/n): ")
+    if ans == "y":
+        return True
+    else:
+        return False
